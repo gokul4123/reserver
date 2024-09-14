@@ -1,0 +1,220 @@
+body{
+    font-family:'Kanit', sans-serif;
+    font-weight: 400;
+}
+
+
+
+.container {
+    background: linear-gradient(135deg, rgb(136, 36, 36),rgb(103, 39, 39));
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.container h2{
+    font-family:'Kanit', sans-serif;
+    font-weight: 500;
+}
+
+.auction-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.auction-item {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-between;
+    background:#005b96;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    width: 97%;
+    border: 2px solid gold;
+}
+
+.bid-each{
+    background-color: rgba(255, 254, 254, 0.182);
+    backdrop-filter: blur(2px);
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+.left-side {
+    flex: 1; 
+    margin-right: 20px;
+}
+
+.auction-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.auction-image:hover {
+    transform: scale(1.05);
+}
+
+.right-side {
+    flex: 2; 
+    display: flex;
+    flex-direction: column;
+}
+
+.right-side h3{
+    font-family:'Kanit', sans-serif;
+    font-weight: 400;
+    color: black;
+}
+
+.right-side p{
+    font-family:'Kanit', sans-serif;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+.button-36{
+    font-size: 20px;
+}
+
+.bid-button {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background: rebeccapurple;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.bid-button:hover {
+    background-color: #ea4a3c98;
+}
+
+.bidders {
+    margin-top: 10px;
+    background-color: rgba(54, 147, 147, 0.636);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    width: 80%;
+    color: rgb(242, 241, 241);
+}
+
+.auction-image {
+    cursor: pointer;
+  }
+  
+  .auction-image.enlarged {
+    position: relative;
+    margin: 10px;
+    top: 0;
+    left: 0;
+    width: 65vw;
+    height: 65vh; 
+    object-fit: contain;
+    z-index: 1000;
+    border-radius: 20px;
+  }
+  
+  .left-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .right-side {
+    padding-left: 20px;
+  }
+  
+  .auction-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .auction-item {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  p{
+    padding: 20px;
+    background-color: rgba(2, 2, 2, 0.37);
+    
+    border-radius: 10px;
+  }
+  
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 10px; 
+    }
+
+    .auction-item {
+        flex-direction: column; 
+        padding: 10px; 
+    }
+
+    .left-side {
+        margin-bottom: 10px; 
+    }
+
+    .right-side {
+        padding-left: 0;
+    }
+
+    .bid-button {
+        padding: 8px 16px; 
+        width: 95%; 
+    }
+
+    .bidders {
+        padding: 10px; 
+        width: 90%; 
+    }
+
+    .auction-image.enlarged {
+        width: 90vw; 
+        height: 90vh; 
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 97%;
+        padding: 5px; 
+    }
+
+    .auction-item {
+        padding: 5px; 
+    }
+
+    .bid-button {
+        padding: 3px 8px; 
+    }
+
+    .bidders {
+        padding: 5px; 
+    }
+}

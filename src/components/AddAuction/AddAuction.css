@@ -1,0 +1,144 @@
+.form-handle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px;
+}
+
+.title-1{
+    width: 10%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.adding{
+  background: linear-gradient(120deg, #d8a85fcd, #d8a85fcd);
+    max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.adding h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    background-image: linear-gradient(92.88deg, #252424 9.16%, #211818 43.89%, #360707 64.72%);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.adder-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview{
+  margin: 15px;
+}
+
+.preview:hover{
+  transform: scale(1.2);
+}
+
+
+.title-1{
+    background-color: #eee;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 18em;
+    border-radius: 1rem;
+    color: rgb(17, 2, 2);
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+}
+
+.timee{
+  margin: 20px;
+}
+
+
+  
+  .title-1, textarea {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    min-height: 100px;
+    margin: 15px;
+    resize: vertical;
+  }
+  
+  .btn {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: linear-gradient(135deg, #5a72f1, #9260d5);
+  }
+  
+  .btn:disabled {
+    background: #b0bec5;
+    cursor: not-allowed;
+  }
+  
+  p {
+    color: #c17b12;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .image-upload {
+    margin: 20px 0;
+  }
+
+  .size{
+    display: flex;
+    justify-content: center;
+    font-family: "Ubuntu", serif;
+    font-weight: 100;
+    font-size: 15px;
+  }
+
+
+/* Mobile-specific styling */
+@media screen and (max-width: 768px) {
+  .form-handle {
+    padding: 20px 10px; 
+  }
+
+  .adding {
+    max-width: 85%;
+    padding: 15px; 
+  }
+
+  .title-1, textarea {
+    width: 100%; 
+    font-size: 1rem; 
+  }
+
+  .btn {
+    padding: 10px; /* Less padding on mobile */
+    font-size: 1rem; /* Keep buttons readable */
+  }
+
+  h2 {
+    font-size: 1.3rem; /* Adjust heading size */
+  }
+}

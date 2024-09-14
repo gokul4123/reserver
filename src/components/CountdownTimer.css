@@ -1,0 +1,14 @@
+
+.countdown-timer {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .countdown-timer span {
+    margin-right: 5px;
+  }
+  
